@@ -1,7 +1,14 @@
-# install Quasar CLI
-$ cd my-project
-$ npm install -g quasar-cli
+# clone the project
+git clone https://github.com/ngthh/MyWebsite.git
 
-# generate a project folder with this template
+# to run this project
+$ cd MyWebsite 
 $ npm install
 $ npx quasar dev
+or $ quasar d
+
+
+###### how to install Quasar CLI for another projects
+$ cd my-project (name for you project)
+$ npm install -g quasar-cli
+$ quarsar (to run)
