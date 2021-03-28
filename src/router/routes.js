@@ -4,7 +4,17 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { path: 'MenuBar', component: () => import('components/MenuBar.vue') },
+      { path: 'PageIndex', component: () => import('pages/Index.vue') },
+      { path: 'GridImg', component: () => import('components/GridImg.vue') },
+    ]
+  },
+  {
+    path: '/map',
+    component: () => import('pages/Map.vue'),
+    children: [
+      { path: 'PageIndex', component: () => import('pages/Index.vue') },
+      { path: 'MapComponent', component: () => import('components/MapComponent.vue') },
     ]
   },
 
